@@ -1,119 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>site</title>
 </head>
+
 <body>
     <style>
-       @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Exo+2&family=Kalam:wght@300;400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Signika:wght@300..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Exo+2&family=Kalam:wght@300;400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Signika:wght@300..700&display=swap');
 
-        *{
+        * {
             padding: 0px;
-            margin:opx;
+            margin: opx;
             box-sizing: border-box;
-            background-color: #F9EFE5; 
+            background-color: #F9EFE5;
         }
-        body{
+
+        body {
             font-family: "Signika", sans-serif;
         }
-        #nav{
+
+        #nav {
             list-style: none;
             padding-left: 10vh;
             color: #bbb9b9;
-            
+            /* border: 3px blue solid; */
             width: 30%;
         }
-        #nav>li{
+
+        #nav>li {
             margin-bottom: 2vh;
         }
-        .box{
+
+        .box {
             display: flex;
             color: #8C8C8C;
             /* border: 2px green solid; */
             /* overflow: hidden; */
             width: 100%;
             height: 100vh;
-            
+
         }
-        .middle-content{
+
+        .middle-content {
             /* border: 3px red solid; */
             width: 70%;
             height: 100%;
-            
+
             /* border:2px black solid; */
-            
+
         }
-        .grid-disp{
+
+        .grid-disp {
             height: 50%;
             width: 50%;
             display: grid;
             grid-template-areas: "y e e" "h m p" "f f p";
-            gap:1vh;
-            
-            margin: 4vh  25% 4vh 25% ;
+            gap: 1vh;
+
+            margin: 4vh 25% 4vh 25%;
             /* margin:4vh 0 ; */
-            
+
         }
-        .grid-disp>div{
+
+        .grid-disp>div {
             border-radius: 1vw;
             display: flex;
             justify-content: center;
             align-items: center;
-            
+
         }
-        #heading{
+
+        #heading {
             margin-top: 0px;
             font-size: 4vh;
             color: #2f2f31;
         }
-       #year{
-        grid-area: y;
-        background-color: white;
-       }
-       #eco{
-        grid-area:e ;
-        background-color:#2f2f31;
-        color:white;
-       }
-       #mount{
-        grid-area: m;
-        background-color: #eeb9cb;
-        color:white;
-       }
+
+        #year {
+            grid-area: y;
+            background-color: white;
+        }
+
+        #eco {
+            grid-area: e;
+            background-color: #2f2f31;
+            color: white;
+        }
+
+        #mount {
+            grid-area: m;
+            background-color: #eeb9cb;
+            color: white;
+        }
+
         #pie {
-            grid-area:p ;
-            background-color:#2f2f31;
-            color:white;
+            grid-area: p;
+            background-color: #2f2f31;
+            color: white;
         }
-        #flags{
+
+        #flags {
             grid-area: f;
-            background-color:#2f2f31;
-            color:white;
+            background-color: #2f2f31;
+            color: white;
         }
-        #hours{
+
+        #hours {
             grid-area: h;
             background-color: #f67848;
-            color:white;
+            color: white;
 
         }
+
         @media screen and (max-width:900px) {
-            .grid-disp{
-                margin:2vh 0px 2vh 0px ;
+            .grid-disp {
+                margin: 2vh 0px 2vh 0px;
                 width: 90%;
-               
-            }
-            #nav{
-                padding-left:0px;
 
             }
-            
+
+            #nav {
+                padding-left: 0px;
+
+            }
+
         }
-      
-
-       
-       
     </style>
     <div class="box">
         <div id="nav">
@@ -121,7 +135,7 @@
             <li>Principles</li>
             <li>Sustainabilty</li>
             <li>Supporters</li>
-         </div>
+        </div>
 
         <div class="middle-content">
             <div>
@@ -129,7 +143,9 @@
                 <p id="heading">What does it take to thrive in remote?</p>
             </div>
             <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam illo facilis eveniet aliquid blanditiis amet aut dignissimos culpa, inventore, vel autem eum repellendus, modi quos repellat. Molestiae rerum voluptatem ex.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam illo facilis eveniet aliquid blanditiis
+                amet aut dignissimos culpa, inventore, vel autem eum repellendus, modi quos repellat. Molestiae rerum
+                voluptatem ex.
             </div>
 
             <div class="grid-disp">
@@ -141,7 +157,9 @@
                 <div id="flags"> flags</div>
             </div>
             <div>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta incidunt recusandae vel fugit sequi illum quis et quam, voluptatum possimus dolorum porro numquam, voluptates necessitatibus reprehenderit voluptatibus itaque fuga dolorem.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta incidunt recusandae vel fugit sequi illum
+                quis et quam, voluptatum possimus dolorum porro numquam, voluptates necessitatibus reprehenderit
+                voluptatibus itaque fuga dolorem.
                 <p>
                     two lines
                 </p>
@@ -150,39 +168,53 @@
     </div>
 
 
-
-    <!-- FOOTER -->
+    <!-- footer -->
     <footer id="footer">
         <div id="container">
             <div>
-                <div><h2>whats about</h2></div> <br>
                 <div>
-                    <ul><li><a href="jde">knowledge</a></li>
-                    <li><a href="jde">knowledge</a></li>
-                    <li><a href="jde">knowledge</a></li>
-                    <li><a href="jde">knowledge</a></li></ul>
+                    <h2>whats about</h2>
+                </div> <br>
+                <div>
+                    <ul>
+                        <li><a href="jde">knowledge</a></li>
+                        <li><a href="jde">knowledge</a></li>
+                        <li><a href="jde">knowledge</a></li>
+                        <li><a href="jde">knowledge</a></li>
+                    </ul>
                 </div>
             </div>
             <div>
-                <div><h2>how it works</h2></div> <br>
                 <div>
-                    <ul><li><a href="">modified</a></li>
-                    <li><a href="">basis</a> </li>
-                    <li><a href="">features</a></li>
-                    <li><a href="">naming</a> </li></ul>
+                    <h2>how it works</h2>
+                </div> <br>
+                <div>
+                    <ul>
+                        <li><a href="">modified</a></li>
+                        <li><a href="">basis</a> </li>
+                        <li><a href="">features</a></li>
+                        <li><a href="">naming</a> </li>
+                    </ul>
                 </div>
             </div>
             <div>
-                <div><h2>resources</h2></resources></div> <br>
                 <div>
-                    <ul><li><a href="">common info</a></li>
-                    <li><a href="tg">common info</a></li>
-                    <li><a href="tg">common info</a></li>
-                    <li><a href="tg">common info</a></li></ul>
+                    <h2>resources</h2>
+                    </resources>
+                </div> <br>
+                <div>
+                    <ul>
+                        <li><a href="">common info</a></li>
+                        <li><a href="tg">common info</a></li>
+                        <li><a href="tg">common info</a></li>
+                        <li><a href="tg">common info</a></li>
+                    </ul>
                 </div>
             </div>
             <div>
-                <div><h2>slite</h2></div> <br>
+                <div>
+                    <h2>slite</h2>
+                </div> <br>
                 <div>
                     <ul>
                         <li><a href="gftywe">intelligence</a></li>
@@ -194,27 +226,33 @@
                 </div>
             </div>
             <div>
-                <div><h2>compare</h2></div> <br>
+                <div>
+                    <h2>compare</h2>
+                </div> <br>
                 <div>
                     <ul>
                         <li><a href="">privacy</a></li>
                         <li><a href="">settings</a></li>
-                       
+
                         <li><a href="">setting</a></li>
                         <li><a href="">setting</a></li>
                     </ul>
                 </div>
             </div>
             <div>
-                <div id="hemlo"><h2>resource letters to read on your own time</h2></div> <br>
+                <div id="hemlo">
+                    <h2>resource letters to read on your own time</h2>
+                </div> <br>
                 <div id="input">
                     <div id="omg4"></div>
                     <div id="omg3"> </div>
                     <!-- <form   action=""> 
                         <input id="hello" type="text"> <label id="hello" for="text"></label> <i class="fa-regular fa-arrow-right"></i>
                     </form> -->
-                    </div> <br>
-                    <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eum repudiandae adipisci quas, in facilis, doloremque harum quisquam voluptas consequuntur deleniti nihil, nesciunt commodi explicabo possimus? Aut, doloremque rem? Non.</div>
+                </div> <br>
+                <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit eum repudiandae adipisci quas, in
+                    facilis, doloremque harum quisquam voluptas consequuntur deleniti nihil, nesciunt commodi explicabo
+                    possimus? Aut, doloremque rem? Non.</div>
             </div>
         </div>
         <div id="outerbox">
@@ -228,108 +266,127 @@
         </div>
     </footer>
     <style>
-        /* @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Exo+2&family=Kalam:wght@300;400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Signika:wght@300..700&display=swap'); */
-        
-        *{
-            padding:0px;
-            margin:0px;
+        @import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Exo+2&family=Kalam:wght@300;400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Signika:wght@300..700&display=swap');
+
+        * {
+            padding: 0px;
+            margin: 0px;
             box-sizing: border-box;
             background-color: #f9efe5;
         }
-        #footer{
-            font-family: "Signika", sans-serif; 
+
+        #footer {
+            font-family: "Signika", sans-serif;
         }
-        #container{
-            margin:0.6vw;
+
+        #container {
+            margin: 0.6vw;
             padding: 0.6vw;
             /* border:2px red solid; */
             display: flex;
-            gap:40px;
-            
+            gap: 40px;
+
             height: 100%;
-            width:100%;
+            width: 100%;
         }
-        #container>div{
+
+        #container>div {
             /* border:2px blue solid; */
-            width:10% 15% 10% 10% 10% 25%;
+            width: 10% 15% 10% 10% 10% 25%;
 
         }
-        #container>div>div{
+
+        #container>div>div {
             /* border:2px green solid; */
             font-size: 20px;
-            
+
         }
-        ul>li{
+
+        li {
             list-style: none;
-            /* font-size: 20px; */
-        }
-        a{
-            color:black;
-            opacity:0.8;
-           
-            
-        }
-        a:hover{
-            color:brown;
-            font-size:20px;
-            margin:1vw;
-        }
-        #hello{
-            height:8vh;
-            width:100%;
-            border-radius:20px;
             font-size: 20px;
         }
-        #outerbox>div{
+
+        a {
+            color: black;
+            opacity: 0.8;
+
+
+        }
+
+        a:hover {
+            color: brown;
+            font-size: 20px;
+            margin: 1vw;
+        }
+
+        #hello {
+            height: 8vh;
+            width: 100%;
+            border-radius: 20px;
+            font-size: 20px;
+        }
+
+        #outerbox>div {
             height: 100%;
-            width:100%;
-            margin:1vw;
+            width: 100%;
+            margin: 1vw;
             /* border:2px black solid; */
             display: flex;
-            gap:20px;
-           
+            gap: 20px;
+
         }
-        #omg{
-            border:3px black solid;
-        width:100%;
-    }
-        #omg2{
+
+        #omg {
+            border: 3px black solid;
+            width: 100%;
+        }
+
+        #omg2 {
             /* border:2px orangered solid; */
             font-size: 20px;
-            width:100%;
+            width: 100%;
         }
-        #input{ 
-            border:2px black solid;
-            border-radius:20px;
+
+        #input {
+            border: 2px black solid;
+            border-radius: 20px;
             display: flex;
-             /* justify-content: end;  */
+            /* justify-content: end;  */
             align-items: center;
-            height:10vh;
-        width:20vw;
-    }
-        #omg3{
-             height:100%;
-             width:20%;
+            height: 10vh;
+            width: 20vw;
+        }
+
+        #omg3 {
+            height: 100%;
+            width: 20%;
 
             padding: 1vh;
             align-items: center;
             justify-content: center;
-            
+
             background-color: skyblue;
             border-radius: 25px;
-             /* border-top-left-radius: px;
-            border-top-right-radius: px; */ */
+            /* border-top-left-radius: px;
+            border-top-right-radius: px; */
+            */
             /* z-index : 100; */
         }
-        #omg4{
+
+        #omg4 {
             /* border:2px blue solid; */
-            width:90%;
+            width: 90%;
         }
-       
+
+        /* #hemlo{
+            width:50vw;
+        } */
     </style>
 
 
 
-    
+
 </body>
+
 </html>
